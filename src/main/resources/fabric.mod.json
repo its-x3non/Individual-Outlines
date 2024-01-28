@@ -2,22 +2,26 @@
   "schemaVersion": 1,
   "id": "individual-outlines",
   "version": "${version}",
-
   "name": "Individual-Outlines",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/NotAS/Individual-Outlines"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/individual-outlines/icon.png",
-
   "environment": "client",
-  "entrypoints": {},
-
-
+  "entrypoints": {
+    "client": [
+      "org.individualoutlines.individualoutlines.client.Individual_OutlinesClient"
+    ],
+    "main": [
+      "org.individualoutlines.individualoutlines.Individual_Outlines"
+    ]
+  },
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
